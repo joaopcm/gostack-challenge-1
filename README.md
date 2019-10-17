@@ -9,16 +9,16 @@
 <blockquote align="center">“Sua única limitação é você mesmo”!</blockquote>
 
 <p align="center">
-  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/rocketseat/bootcamp-gostack-desafio-01?color=%2304D361">
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/jopcmelo/gostack-challenge-1">
 
   <a href="https://rocketseat.com.br">
-    <img alt="Made by Rocketseat" src="https://img.shields.io/badge/made%20by-Rocketseat-%2304D361">
+    <img alt="Made by João Melo" src="https://img.shields.io/badge/made%20by-Jo%C3%A3o%20Melo-green">
   </a>
 
   <img alt="License" src="https://img.shields.io/github/license/jopcmelo/gostack-challenge-1">
 
   <a href="https://github.com/Rocketseat/bootcamp-gostack-desafio-01/stargazers">
-    <img alt="Stargazers" src="https://img.shields.io/github/stars/rocketseat/bootcamp-gostack-desafio-01?style=social">
+    <img alt="Stargazers" src="https://img.shields.io/github/stars/jopcmelo/gostack-challenge-1?style=social">
   </a>
 </p>
 
