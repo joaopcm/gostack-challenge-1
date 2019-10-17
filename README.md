@@ -12,7 +12,7 @@
   <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/jopcmelo/gostack-challenge-1">
 
   <a href="https://rocketseat.com.br">
-    <img alt="Made by João Melo" src="https://img.shields.io/badge/made%20by-Jo%C3%A3o%20Melo">
+    <img alt="Made by João Melo" src="https://img.shields.io/badge/made%20by-Jo%C3%A3o%20Melo-green">
   </a>
 
   <img alt="License" src="https://img.shields.io/github/license/jopcmelo/gostack-challenge-1">
