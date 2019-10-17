@@ -33,13 +33,10 @@ class ProjectController {
 
   async update(req, res) {
     const schema = Yup.object().shape({
-      id: Yup.string()
-        .required()
-        .length(24),
       title: Yup.string().required(),
     });
 
-    if (!(await schema.isValid({ ...req.body, ...req.params }))) {
+    if (!(await schema.isValid(req.body))) {
       return res.status(400).json({ error: 'Validation failed' });
     }
 
@@ -59,16 +56,6 @@ class ProjectController {
   }
 
   async delete(req, res) {
-    const schema = Yup.object().shape({
-      id: Yup.string()
-        .required()
-        .length(24),
-    });
-
-    if (!(await schema.isValid(req.params))) {
-      return res.status(400).json({ error: 'Validation failed' });
-    }
-
     const { id } = req.params;
 
     const project = await Project.findById(id);
