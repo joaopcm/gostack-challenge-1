@@ -7,6 +7,11 @@ const ProjectSchema = new mongoose.Schema(
       required: true,
     },
     tasks: Array,
+    is_deleted: {
+      type: Boolean,
+      default: false,
+      required: true,
+    },
   },
   { timestamps: true }
 );
