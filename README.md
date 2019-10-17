@@ -9,7 +9,7 @@
 <blockquote align="center">“Sua única limitação é você mesmo”!</blockquote>
 
 <p align="center">
-  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/jopcmelo/gostack-challenge-1-green">
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/jopcmelo/gostack-challenge-1">
 
   <a href="https://rocketseat.com.br">
     <img alt="Made by João Melo" src="https://img.shields.io/badge/made%20by-Jo%C3%A3o%20Melo-green">
