@@ -2,6 +2,8 @@ import 'dotenv/config';
 
 import express from 'express';
 import Youch from 'youch';
+import 'express-async-errors';
+
 import routes from './routes';
 
 import './database';
