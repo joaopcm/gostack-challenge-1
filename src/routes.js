@@ -7,8 +7,9 @@ const routes = new Router();
 
 routes.get('/projects', ProjectController.index);
 routes.post('/projects', ProjectController.store);
-routes.put('/projects/:project_id', ProjectController.update);
+routes.put('/projects/:id', ProjectController.update);
+routes.delete('/projects/:id', ProjectController.delete);
 
-routes.post('/projects/:project_id/tasks', TaskController.store);
+routes.post('/projects/:id/tasks', TaskController.store);
 
 export default routes;

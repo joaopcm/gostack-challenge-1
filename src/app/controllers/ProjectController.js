@@ -33,7 +33,9 @@ class ProjectController {
 
   async update(req, res) {
     const schema = Yup.object().shape({
-      project_id: Yup.string().required(),
+      id: Yup.string()
+        .required()
+        .length(24),
       title: Yup.string().required(),
     });
 
@@ -41,10 +43,10 @@ class ProjectController {
       return res.status(400).json({ error: 'Validation failed' });
     }
 
-    const { project_id } = req.params;
+    const { id } = req.params;
     const { title } = req.body;
 
-    const project = await Project.findById(project_id);
+    const project = await Project.findById(id);
 
     if (!project) {
       return res.status(400).json({ error: 'Project does not exist' });
@@ -54,6 +56,26 @@ class ProjectController {
     project.save();
 
     return res.json(project);
+  }
+
+  async delete(req, res) {
+    const schema = Yup.object().shape({
+      id: Yup.string()
+        .required()
+        .length(24),
+    });
+
+    if (!(await schema.isValid(req.params))) {
+      return res.status(400).json({ error: 'Validation failed' });
+    }
+
+    const { id } = req.params;
+
+    const project = await Project.findById(id);
+
+    project.delete();
+
+    return res.send();
   }
 }
 
