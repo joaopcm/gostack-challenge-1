@@ -30,6 +30,31 @@ class ProjectController {
 
     return res.json(project);
   }
+
+  async update(req, res) {
+    const schema = Yup.object().shape({
+      project_id: Yup.string().required(),
+      title: Yup.string().required(),
+    });
+
+    if (!(await schema.isValid({ ...req.body, ...req.params }))) {
+      return res.status(400).json({ error: 'Validation failed' });
+    }
+
+    const { project_id } = req.params;
+    const { title } = req.body;
+
+    const project = await Project.findById(project_id);
+
+    if (!project) {
+      return res.status(400).json({ error: 'Project does not exist' });
+    }
+
+    project.title = title;
+    project.save();
+
+    return res.json(project);
+  }
 }
 
 export default new ProjectController();
